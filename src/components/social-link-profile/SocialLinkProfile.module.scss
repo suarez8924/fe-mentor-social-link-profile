@@ -1,0 +1,80 @@
+@use '../../styles/colors';
+@use '../../styles/media-queries';
+
+.socialLinkProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$color-dark-grey;
+  border-radius: 1.2rem;
+  width: 100%;
+  max-width: 38.4rem;
+  padding: 2.4rem;
+  text-align: center;
+
+  .avatar {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 8.8rem;
+    height: 8.8rem;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .fullName {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 2.4rem;
+  }
+
+  .location {
+    color: colors.$color-green;
+    font-weight: 700;
+    margin-top: 0.4rem;
+  }
+
+  .intro {
+    margin-top: 2.4rem;
+  }
+
+  .socialMediaList {
+    margin-top: 2.4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .link {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    padding: 1.2rem;
+    background-color: colors.$color-grey;
+    border-radius: 0.8rem;
+  }
+
+  @media (min-width: media-queries.$media-tablet) {
+    padding: 4rem;
+
+    .link {
+      &:hover,
+      &:focus-within {
+        background-color: colors.$color-green;
+        color: colors.$color-grey;
+
+        transition: color, background-color 0.3s ease-out;
+      }
+    }
+  }
+}
