@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![App Screenshot](./assets/images/app-screenshot.png)
+![App Screenshot](/public/app-screenshot.png)
 
 ### Links
 
