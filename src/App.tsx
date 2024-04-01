@@ -3,7 +3,7 @@ import SocialLinkProfile from './components/social-link-profile/SocialLinkProfil
 import AvatarJessica from './assets/images/avatar-jessica.jpeg';
 
 const USER = {
-  avatarUrl: AvatarJessica,
+  avatar: { url: AvatarJessica, alt: 'Avatar of Jessica Randall' },
   fullName: 'Jessica Randall',
   location: 'London, United Kingdom',
   intro: 'Front-end developer and avid reader.',

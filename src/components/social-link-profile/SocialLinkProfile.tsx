@@ -11,12 +11,12 @@ const getKey = (text: string) => {
 };
 
 const SocialLinkProfile = ({ user }: SocialLinkProfileProps) => {
-  const { avatarUrl, fullName, location, intro, socialLinks } = user;
+  const { avatar, fullName, location, intro, socialLinks } = user;
 
   return (
     <div className={styles.socialLinkProfile}>
       <picture className={styles.avatar}>
-        <img src={avatarUrl} alt="" />
+        <img src={avatar.url} alt={avatar.alt || ''} />
       </picture>
       <h1 className={styles.fullName}>{fullName}</h1>
       <p className={styles.location}>{location}</p>

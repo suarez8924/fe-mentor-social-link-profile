@@ -1,5 +1,5 @@
 export type User = {
-  avatarUrl: string;
+  avatar: { url: string; alt?: string };
   fullName: string;
   location: string;
   intro: string;
